@@ -1,6 +1,6 @@
 const { combineReducers } = Redux
 
-const todos = (state = [], action) => {
+const todos = (state = getAllTodos(), action) => {
     switch (action.type) {
         case 'ADD_TODO':
             return [
